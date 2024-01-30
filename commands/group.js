@@ -118,7 +118,7 @@ cmd({
 cmd({
             pattern: "unblock",
             desc: "Unblocked to the quoted user.",
-            category: "owner",
+            category: "owner" ,
             filename: __filename,
 
         },
