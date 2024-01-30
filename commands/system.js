@@ -252,23 +252,23 @@ cmd({
         async(Void, citel, text, isAdmins) => {
             
             const alivtxt = `
-⦁━⦁👑𝙆𝙄𝙉𝙂-𝙑𝘼𝙅𝙄𝙍𝘼-𝙈𝘿👑⦁━⦁\n\nHello, ${citel.pushName},\n
+⦁━⦁👑𝙆𝙄𝙉𝙂-𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷-𝙈𝘿👑⦁━⦁\n\nHello, ${citel.pushName},\n
 
-_හරියනකොට අඩන මිනිස්සු වරදිනකොට හිනා වෙනවා🤘_
+_People laugh when they cry🤘
+_
 ━━━✥◈✥━━━
 🎋►*Version:-* _0.0.7_
 🎋►*Uptime:-* _${runtime(process.uptime())}_
 🎋►*Owner:-* _${Config.ownername}_
 🎋►*Branch:-* _${Config.BRANCH}_
-━━━✥◈✥━━━\n\n📲 Install Bot➣ https://github.com/vajirabot1/KING-VAJIRA-MD\n💻 Youtube channel➣
-https://youtube.com/@gamingewingyt6216\n🗃️ Public Group➣ https://chat.whatsapp.com/BvNbfgOzzo77urGqoNjThk\n\n ━━━━━━━━━━━━\nහිමි නැති ආදරෙට බොරු අයිතිවාසිකම් කීවත් හිමි වෙන්නෙ නැ කිසිදාකවත්💔\n
+━━━✥◈✥━━━\n\n📲 Install Bot\n
 _Type ${prefix}menu for my command list._
 
-_━━━Powered by Vajira Rathnayaka━━━_
+_━━━Powered by 𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷━━━_
 `;
             let aliveMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/38ca08b1213d105cafd7b.jpg',
+                    url: 'https://i.imgur.com/TgeLtdY.jpeg',
                 },
                 caption: alivtxt,
                 footer: tlang().footer,
