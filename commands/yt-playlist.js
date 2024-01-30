@@ -66,8 +66,8 @@ yts( opts, async function ( err, playlist ) {
                                 thumbnail: log0,
                                 renderLargerThumbnail: true,
                                 mediaType: 2,
-                                mediaUrl: 'https://github.com/vajirabot1/KING-VAJIRA-MD',
-                                sourceUrl: 'https://github.com/vajirabot1/KING-VAJIRA-MD'
+                                mediaUrl: 'https://wa.me/+918637016112?text=_𝑯𝒆𝒚+𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷+🎀+🎈_',
+                                sourceUrl: 'https://wa.me/+918637016112?text=_𝑯𝒆𝒚+𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷+🎀+🎈_'
                             }
                         }
                     }
