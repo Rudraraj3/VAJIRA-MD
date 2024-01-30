@@ -56,7 +56,7 @@ cmd({
  const { status , video, audio } = await tiktokdl(txt)  
  if (status){ 
      await Void.sendMessage(citel.chat, { audio: {url : audio,}, mimetype: 'audio/mpeg' }, { quoted: citel }); 
-     return await Void.sendMessage(citel.chat, {video : {url : video } , caption: "POWERD BY KING-VAJIRA" } , {quoted : citel }); 
+     return await Void.sendMessage(citel.chat, {video : {url : video } , caption: "POWERD BY Rudraraj" } , {quoted : citel }); 
   }  
  else return await citel.reply("Error While Downloading Your Video")   
  })
@@ -99,7 +99,7 @@ cmd({
 
 cmd({ 
              pattern: "video2", 
-            alias :['විඩියො','vd'],
+            alias :['video','vd'],
              desc: "Downloads video from yt.", 
              category: "downloader", 
              filename: __filename, 
@@ -123,7 +123,8 @@ cmd({
                  if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`❌ Video file too big!`); 
                  let titleYt = infoYt.videoDetails.title; 
                  let randomName = getRandom(".mp4"); 
-                 citel.reply('🔎 ඔබේ ගීතය සොයමින් පවතී.') 
+                 citel.reply('🔎Searching for your song
+') 
                  const stream = ytdl(urlYt, { 
                          filter: (info) => info.itag == 22 || info.itag == 18, 
                      }) 
@@ -166,7 +167,7 @@ await sleep(2000);
                           jpegThumbnail: log0,
                           mimetype: 'video/mp4',  
                           fileName: `${titleYt}.mp4`, 
-                          caption: `*📥 𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 𝙑𝘼𝙅𝙄𝙍𝘼 📥*`, 
+                          caption: `*📥 𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 ★★𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷-𝗺𝗱★★📥*`, 
                       }  
                    Void.sendMessage(citel.chat, buttonMessage, { quoted: citel }); 
   
@@ -218,7 +219,7 @@ cmd({
                         jpegThumbnail: log0,
                         mimetype: 'video/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: ` ✅─ඔබ ඉල්ලූ වීඩියෝව─✅\n───⦁⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ↻⦁──\n\n📌➣Title : ${titleYt}\n 📍➣File Size : ${fileSizeInMegabytes} MB\n👤➣Author: ${anu.author.name}\n📥➣Uploaded: ${anu.ago}\n🕐➣Duration: ${anu.timestamp}\n👥➣Viewers:* ${anu.views}\n\n◀─ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ─▶`,
+                        caption: ` ✅─ The video you requested ─✅\n───⦁⇆ㅤ ||◁ㅤ❚❚ㅤ▷||ㅤ ↻⦁──\n\n📌➣Title : ${titleYt}\n 📍➣File Size : ${fileSizeInMegabytes} MB\n👤➣Author: ${anu.author.name}\n📥➣Uploaded: ${anu.ago}\n🕐➣Duration: ${anu.timestamp}\n👥➣Viewers:* ${anu.views}\n\n◀─ɢᴇɴᴀʀᴀᴛᴇᴅ ʙʏ ༺❦ꪶ͢𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷༻`,
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -246,7 +247,7 @@ cmd({
 cmd({
 
             pattern: "heroku",           
-            alias :['හෙරකු','herokubin','bin'],
+            alias :['heroku','herokubin','bin'],
             desc: "(menu cmdlist).",
             category: "downloader",
             react: "💌",
@@ -280,16 +281,16 @@ cmd({
                 },
 
                 caption: `
-*අළුත් heroku account එකක් හදලා ගන්න*
+* heroku account *
 
 
-FIRST NAME : VAJIRA
+FIRST NAME : Rudraraj
 
-SECOND NAME : RATHNAYAKA
+SECOND NAME : king
 
 COUNTRY : US
 
-ADDRESS 1 : heroku cc 2023 bin
+ADDRESS 1 : heroku cc 2024 bin
 
 CITY : NEW YORK
 
@@ -357,7 +358,7 @@ ZIP CODE : 10080
 
 5148121009748415|08|2025|245
 
-*By Vajira 👑*
+*By Rudraraj_👑*
 `,
 
                 footer: tlang().footer,
@@ -395,6 +396,7 @@ cmd({
 │⿻ *Viewers:* ${anu.views}
 │⿻ *Uploaded:* ${anu.ago}
 │⿻ *Author:* ${anu.author.name}
+│⿻ *Owner:*༺❦ꪶ͢𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷༻²⁰²⁴
 ╚═•∞•═════════╝
 ⦿ *Url* : ${anu.url}
 `,
@@ -481,7 +483,7 @@ cmd({
             if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`The link you provided is invalid`);
             const baby1 = await mediafire(text);
             if (baby1[0].size.split("MB")[0] >= 999) return reply("*File Over Limit* " + util.format(baby1));
-            const result4 = `*ᴠᴀᴊɪʀᴀ Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ*
+            const result4 = `*༺❦ꪶ͢𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷༻²⁰²⁴ Mᴇᴅɪᴀғɪʀᴇ Dᴏᴡɴʟᴏᴀᴅᴇʀ*
 *Nᴀᴍᴇ* : ${baby1[0].nama}
 *Sɪᴢᴇ* : ${baby1[0].size}
 *Mɪᴍᴇ* : ${baby1[0].mime}
@@ -528,7 +530,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
                },
                 caption: `
  ───────➢───────
- 🎧𝕂𝕀ℕ𝔾 𝕍𝔸𝕁𝕀ℝ𝔸🎧
+ 🎧༺❦ꪶ͢𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷༻²⁰²⁴🎧
 ┋👩‍🎨 ${tlang().title} 
 ┋🚨 *Youtube Player* ✨
   ╼━━━━━➢━━━━━━╾
@@ -567,6 +569,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
 ┊👀 *Viewers:* ${anu.views}
 ┊⬆️ *Uploaded:* ${anu.ago}
 ┊👽 *Author:* ${anu.author.name}
+┊😎 *Powered by Rudraraj 
 ╚────────────────◆
 ⦿ *Url* : ${anu.url}`,)
 */
@@ -632,7 +635,7 @@ cmd({
             if (infoYt.videoDetails.lengthSeconds >= videotime) return citel.reply(`😔 Video file too big!`);
             let titleYt = infoYt.videoDetails.title;
             let randomName = getRandom(".mp3");
-            citel.reply('*📥➣Downloadig:* '+titleYt)
+            citel.reply('*📥➣Downloadig by Rudraraj:* '+titleYt)
             const stream = ytdl(anu.url, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -862,7 +865,7 @@ cmd({
                         document: fs.readFileSync(`./${randomName}`),
                         mimetype: 'document/mp4',
                         fileName: `${titleYt}.mp4`,
-                        caption: `★[KING VAJIRA MD]★ `,                        
+                        caption: `★[★★𝗥𝘂𝗱𝗿𝗮𝗿𝗮𝗷-𝗺𝗱★★]★ `,                        
                         headerType: 4,
                         contextInfo: {
                             externalAdReply: {
@@ -973,7 +976,7 @@ cmd({
   }, async(Void,citel,text) => {
    if (!citel.isGroup) {
     if (!text) return citel.reply(`Enter Url`)
-        if (!text.includes('xnxx.com')) return citel.reply(`Enter an xnxx link\n\n🖕මේ කාමලෝකෙට ආස කරන්නා එපා ලමයෝ🤣`)
+        if (!text.includes('xnxx.com')) return citel.reply(`Enter an xnxx link\n\n🖕You've got a lot of work to do🤣you've got a lot of work to do\you've got a lot of work to do\you've got a lot of work to do \ you've got a lot of work to do. Go get it🤣`)
         const fg = require('api-dylux')
         let xn = await fg.xnxxdl(text)
         let cap =`🥶  *XNXX DL*
@@ -994,6 +997,7 @@ cmd({
                  }) 
    }
  else{
-    return citel.reply('This command can not use in group.\n\n🖕උබට මාර මෝල් අමාරුවක් නේද තියන්නෙ කැරියා🤣\n\nInbox විතරයි වැඩ පුතේ. ගනිම් ගිහින්🤣') 
+    return citel.reply('This command can not use in group.\nYou've got a lot of work to do🤣you've got a lot of work to do\you've got a lot of work to do\you've got a lot of work to do \ you've got a lot of work to do. Go get it }
+\n🖕🤣\n\nInbox You've got a lot of work to do🤣you've got a lot of work to do\you've got a lot of work to do\you've got a lot of work to do \ you've got a lot of work to do. Go get it🤣') 
  }
   });
